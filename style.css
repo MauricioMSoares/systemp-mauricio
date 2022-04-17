@@ -4,10 +4,14 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+    background-color: #222831;
+    color:white;
 }
 
 .header {
     background-color: #393e46;
+    position: fixed;
+    width: 100%;
 }
 
 .container {
@@ -30,7 +34,7 @@ body {
 
 .navbar a {
     text-decoration: none;
-    color: rgb(218, 218, 218);
+    color:rgb(218, 218, 218);
 }
 
 .banner {
@@ -40,6 +44,89 @@ body {
 
 .banner .container {
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100vh;
+}
+
+.banner h2 {
+    width: 550px;
+}
+
+/*------------------------Produtos------------------------*/
+
+.titulo {
+    display: flex;
+    justify-content: center;
+}
+
+.titulo h1 {
+    color:rgb(218, 218, 218);
+    text-decoration-line: underline;
+    margin: 70px 0;
+}
+
+.produtos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.imagens_produtos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ff8c00;
+    padding: 50px 0;
+    border-radius: 40px;
+    width: 300px;
+}
+
+.imagens_background {
+    display: flex;
+    justify-content: center;
+    background-color: #393e46;
+    width: 100%;
+    border-radius: 18px;
+}
+
+.ilustracoes {
+    width: 200px;
+}
+
+.descricoes {
+    padding: 90px 0 20px;
+    width: 250px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+/*-----------------------Sobre nós-----------------------*/
+
+#sobre_nos {
+    display: flex;
+    flex-direction: column;
+    background-color: #ff8c00;
+    border-radius: 40px;
+    height: 400px;
+    width: 55%;
+    padding: 2px 20px;
+    margin-top: 250px;
+    float: left;
+}
+
+#sobre_nos h1 {
+    font-weight: 500;
+    text-decoration-line: underline;
+}
+
+#sobre_nos p {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+#companhia {
+    width: 300px;
+    float: right;
+    margin-top: 300px;
 }
