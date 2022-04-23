@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SysTemp - Cadastro</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <div class="header">
+        <div class="container">
+            <img src="../imgs/SYSTEMP.png">
+            <ul class="navbar">
+                <li><a href="home.html"><u>Home</u></a></li>
+                <li><a href="simulador.html">Simulador</a></li>
+                <li><a href="#logo_email">Contato</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="#"><u>Cadastro</u></a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <form class="formulario cadastro">
+            <label for="input_nome">Nome de usuário: </label>
+            <input type="text" id="input_nome" placeholder="Digite o nome de usuário">
+            <label for="input_cnpj">CNPJ: </label>
+            <input type="number" id="input_cnpj" placeholder="Digite o CNPJ">
+            <label for="input_email">E-mail: </label>
+            <input type="text" id="input_email" placeholder="Digite um e-mail">
+            <label for="input_senha">Senha: </label>
+            <input type="password" id="input_senha" placeholder="Digite uma senha">
+            <label for="input_confirmar">Confirmar senha: </label>
+            <input type="password" id="input_confirmar" placeholder="Digite novamente a senha">
+            <button type="button" onclick="cadastrar()">Enviar</button>
+        </form>
+        <div id="span_erro">
+            <span id="span_erro_nome"></span>
+            <span id="span_erro_cnpj"></span>
+            <span id="span_erro_email"></span>
+            <span id="span_erro_senha"></span>
+            <span id="span_erro_confirmar"></span>
+        </div>
+    </div>
+    
+</body>
+</html>
+
