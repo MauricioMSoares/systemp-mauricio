@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>SysTemp - Cadastro</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
 
     <div class="header">
@@ -22,20 +24,25 @@
             </ul>
         </div>
     </div>
-    <div class="container">
-        <form class="formulario cadastro">
-            <label for="input_nome">Nome de usuário: </label>
-            <input type="text" id="input_nome" placeholder="Digite o nome de usuário">
-            <label for="input_cnpj">CNPJ: </label>
-            <input type="number" id="input_cnpj" placeholder="Digite o CNPJ">
-            <label for="input_email">E-mail: </label>
-            <input type="text" id="input_email" placeholder="Digite um e-mail">
-            <label for="input_senha">Senha: </label>
-            <input type="password" id="input_senha" placeholder="Digite uma senha">
-            <label for="input_confirmar">Confirmar senha: </label>
-            <input type="password" id="input_confirmar" placeholder="Digite novamente a senha">
-            <button type="button" onclick="cadastrar()">Enviar</button>
-        </form>
+    <div class="container cadastro">
+        <div class="titulo">
+            <h1>Cadastre-se aqui:</h1>
+        </div>
+        <div class="formulario cadastro">
+            <form>
+                <label class="label_cadastro" for="input_nome">Nome de usuário: </label>
+                <input type="text" id="input_nome" placeholder="Digite o nome de usuário">
+                <label class="label_cadastro" for="input_cnpj">CNPJ: </label>
+                <input type="number" id="input_cnpj" placeholder="Digite o CNPJ">
+                <label class="label_cadastro" for="input_email">E-mail: </label>
+                <input type="text" id="input_email" placeholder="Digite um e-mail">
+                <label class="label_cadastro" for="input_senha">Senha: </label>
+                <input type="password" id="input_senha" placeholder="Digite uma senha">
+                <label class="label_cadastro" for="input_confirmar">Confirmar senha: </label>
+                <input type="password" id="input_confirmar" placeholder="Digite novamente a senha">
+                <button type="button" onclick="cadastrar()">Enviar</button>
+            </form>
+        </div>
         <div id="span_erro">
             <span id="span_erro_nome"></span>
             <span id="span_erro_cnpj"></span>
@@ -44,7 +51,7 @@
             <span id="span_erro_confirmar"></span>
         </div>
     </div>
-    
-</body>
-</html>
 
+</body>
+
+</html>
